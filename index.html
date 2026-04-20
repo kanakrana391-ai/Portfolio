@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanak | AI/ML & CS Portfolio</title>
+
+    <!-- Modern Typography: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Local CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- 1. NAVBAR UI -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">Kanak<span>.</span></a>
+
+            <div class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+                <a href="./Kanak_Rana_Resume.pdf" class="btn btn-resume-custom" download target="_blank" title="View / Download Resume">Download Resume <i class="fa-solid fa-download"></i></a>
+
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobile-menu-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Navigation Menu -->
+    <div class="mobile-menu" id="mobile-menu">
+        <a href="#home" class="mobile-link">Home</a>
+        <a href="#about" class="mobile-link">About</a>
+        <a href="#skills" class="mobile-link">Skills</a>
+        <a href="#projects" class="mobile-link">Projects</a>
+        <a href="#contact" class="mobile-link">Contact</a>
+    </div>
+
+    <main>
+        <!-- 2. HERO SECTION -->
+        <section id="home" class="hero section-padding">
+            <div class="container hero-grid">
+                <div class="hero-content reveal">
+                    <div class="greeting">
+                        <span class="wave">👋</span> Hi, I'm
+                    </div>
+                    <h1 class="hero-name">Kanak</h1>
+                    <h2 class="hero-role">AI/ML Engineer & CS Student</h2>
+                    <div class="typing-container">
+                        <span id="typing-text"></span><span class="cursor">|</span>
+                    </div>
+                    <p class="hero-tagline">
+                        Bridging the gap between intelligent algorithms and impactful user experiences.
+                    </p>
+                    <div class="hero-cta">
+                        <a href="#projects" class="btn btn-primary glow-effect">View Projects</a>
+                        <a href="./Kanak_Rana_Resume.pdf" class="btn btn-resume-custom" target="_blank" download title="View / Download Resume">Download Resume <i class="fa-solid fa-download"></i></a>
+                    </div>
+                </div>
+
+                <div class="hero-visual reveal fade-right" id="parallax-wrapper">
+                    <div class="hero-image-wrapper">
+                        <!-- Blurred backing gradient integrating extracted tones, primary and accent -->
+                        <div class="hero-image-backdrop"></div>
+                        
+                        <div class="hero-image-container">
+                            <img src="image.jpeg" alt="Kanak profile" class="hero-profile-image">
+                            <div class="hero-image-overlay"></div>
+                        </div>
+
+                        <!-- Floating elements -->
+                        <div class="floating-card python-card float-anim-1 glass">
+                            <i class="fa-brands fa-python"></i>
+                            <span>def build_ai():</span>
+                        </div>
+                        <div class="floating-card ml-card float-anim-2 glass">
+                            <i class="fa-solid fa-brain"></i>
+                            <span>Model Training: 98%</span>
+                        </div>
+                        <div class="floating-card code-card float-anim-3 glass">
+                            <i class="fa-solid fa-terminal"></i>
+                            <span>$ ./deploy.sh</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 3. ABOUT SECTION -->
+        <section id="about" class="about section-padding secondary-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-grid reveal">
+                    <div class="about-image glass">
+                        <img src="image.jpeg" alt="Kanak profile" class="profile-pic">
+                    </div>
+
+                    <div class="about-text">
+                        <p>I am an ambitious AI/ML & Computer Science student passionate about building scalable,
+                            intelligent systems. My focus lies at the intersection of deep learning, robust software
+                            engineering, and clean, intuitive design.</p>
+
+                        <p>When I'm not training models or debugging code, I enjoy exploring new web technologies and
+                            solving complex algorithmic challenges. My approach to development marries technical rigor
+                            with an aesthetic touch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 4. SKILLS SECTION -->
+        <section id="skills" class="skills section-padding">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Technical Arsenal</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- AI & ML -->
+                    <div class="skill-category glass hover-lift reveal">
+                        <div class="skill-icon"><i class="fa-solid fa-robot"></i></div>
+                        <h3>AI / ML</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Stitch</span>
+                            <span class="skill-tag">Antigravity</span>
+                            <span class="skill-tag">Krio</span>
+                            <span class="skill-tag">Scikit-Learn</span>
+                        </div>
+                    </div>
+
+                    <!-- Programming Languages -->
+                    <div class="skill-category glass hover-lift reveal delay-1">
+                        <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+                        <h3>Programming</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">C++</span>
+                            <span class="skill-tag">JavaScript</span>
+                            <span class="skill-tag">Java</span>
+                            <span class="skill-tag">SQL</span>
+                        </div>
+                    </div>
+
+                    <!-- Web Dev -->
+                    <div class="skill-category glass hover-lift reveal delay-2">
+                        <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Web Development</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">HTML/CSS</span>
+                        </div>
+                    </div>
+
+                    <!-- Tools & DSA -->
+                    <div class="skill-category glass hover-lift reveal delay-3">
+                        <div class="skill-icon"><i class="fa-solid fa-screwdriver-wrench"></i></div>
+                        <h3>Tools & DSA</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git / GitHub</span>
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Problem Solving</span>
+                            <span class="skill-tag">Data Structures</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 5. PROJECTS SECTION -->
+        <section id="projects" class="projects section-padding secondary-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Selected Works</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <!-- Project 1 -->
+                    <div class="project-card glass hover-lift reveal">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder bg-gradient-1">
+                                <i class="fa-solid fa-brain"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>AI Study Planner</h3>
+                            <p>An intelligent, rule-based system in Python with a Tkinter GUI that generates
+                                personalized, balanced study schedules and tracks academic progress.</p>
+                            <div class="tech-stack-badges">
+                                <span>Python</span>
+                                <span>Tkinter</span>
+                                <span>AI logic</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="btn btn-text">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass hover-lift reveal delay-1">
+                        <div class="project-img-wrapper">
+                            <div class="project-placeholder bg-gradient-2">
+                                <i class="fa-solid fa-book-open-reader"></i>
+                            </div>
+                        </div>
+                        <div class="project-info">
+                            <h3>Library Management System</h3>
+                            <p>A fully functional responsive Library platform using Vanilla JS. Supports Admin/User
+                                roles, book CRUD operations, and borrowing features.</p>
+                            <div class="tech-stack-badges">
+                                <span>HTML</span>
+                                <span>CSS</span>
+                                <span>Vanilla JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn btn-outline"><i class="fa-brands fa-github"></i> GitHub</a>
+                                <a href="#" class="btn btn-text">Live Demo <i class="fa-solid fa-arrow-right"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. ACHIEVEMENTS SECTION -->
+        <section class="achievements section-padding">
+            <div class="container">
+                <div class="achievements-grid reveal">
+                    <div class="achievement-item glass">
+                        <div class="achieve-icon"><i class="fa-solid fa-trophy"></i></div>
+                        <h4>Strong Problem Solver</h4>
+                        <p>Consistent performer in competitive coding platforms.</p>
+                    </div>
+                    <div class="achievement-item glass">
+                        <div class="achieve-icon"><i class="fa-solid fa-rocket"></i></div>
+                        <h4>Fast Learner</h4>
+                        <p>Adaptable and quick to master new deep learning architectures.</p>
+                    </div>
+                    <div class="achievement-item glass">
+                        <div class="achieve-icon"><i class="fa-solid fa-network-wired"></i></div>
+                        <h4>AI/ML Enthusiast</h4>
+                        <p>Actively building and researching modern AI solutions.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 7. CONTACT SECTION -->
+        <section id="contact" class="contact section-padding secondary-bg">
+            <div class="container">
+                <div class="section-header reveal">
+                    <h2 class="section-title">Get In Touch</h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-wrapper glass reveal">
+                    <div class="contact-info">
+                        <h3>Let's build something amazing together.</h3>
+                        <p>Whether you have a question or just want to say hi, my inbox is always open.</p>
+
+                        <div class="social-links-large">
+                            <a href="mailto:kanakrana391@gmail.com" class="social-item hover-lift">
+                                <i class="fa-solid fa-envelope"></i>
+                                <span>kanakrana391@gmail.com</span>
+                            </a>
+                            <a href="tel:8745940412" class="social-item hover-lift">
+                                <i class="fa-solid fa-phone"></i>
+                                <span>8745940412</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/sunita-rana-0a2403375/" class="social-item hover-lift" target="_blank">
+                                <i class="fa-brands fa-linkedin-in"></i>
+                                <span>LinkedIn Profile</span>
+                            </a>
+                            <a href="https://github.com/kanakrana391-ai" class="social-item hover-lift" target="_blank">
+                                <i class="fa-brands fa-github"></i>
+                                <span>GitHub Projects</span>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" id="name" required placeholder="John Doe">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" required placeholder="john@example.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message</label>
+                                <textarea id="message" rows="4" required placeholder="Your message here..."></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary glow-effect" style="width: 100%;">Send Message
+                                <i class="fa-solid fa-paper-plane"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- 8. FOOTER -->
+    <footer>
+        <div class="container footer-content">
+            <div class="footer-brand">
+                <h2>Kanak.</h2>
+                <p>AI/ML & CS Portfolio</p>
+            </div>
+
+            <div class="footer-socials">
+                <a href="https://github.com/kanakrana391-ai" aria-label="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/sunita-rana-0a2403375/" aria-label="LinkedIn" target="_blank"><i
+                        class="fa-brands fa-linkedin"></i></a>
+                <a href="mailto:kanakrana391@gmail.com" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                <a href="tel:8745940412" aria-label="Phone"><i class="fa-solid fa-phone"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; <span id="current-year"></span> Kanak. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="main.js"></script>
+</body>
+
+</html>
