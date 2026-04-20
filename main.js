@@ -3,7 +3,7 @@
  */
 
 document.addEventListener('DOMContentLoaded', () => {
-    
+
     // 1. Theme Toggle
     const themeToggleBtn = document.getElementById('theme-toggle');
     const htmlElement = document.documentElement;
@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     function typeEffect() {
         const currentPhrase = phrases[phraseIndex];
-        
+
         if (isDeleting) {
             typingTextElement.textContent = currentPhrase.substring(0, charIndex - 1);
             charIndex--;
@@ -91,15 +91,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         setTimeout(typeEffect, typingSpeed);
     }
-    
+
     // Start typing effect immediately
-    if(typingTextElement) {
+    if (typingTextElement) {
         setTimeout(typeEffect, 1000);
     }
 
     // 5. Scroll Reveal Animation using IntersectionObserver
     const revealElements = document.querySelectorAll('.reveal');
-    
+
     const revealOptions = {
         threshold: 0.15,
         rootMargin: "0px 0px -50px 0px"
@@ -131,10 +131,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const updateCount = () => {
                     const target = +counter.getAttribute('data-target');
                     const count = +counter.innerText;
-                    
+
                     // Increment calculates
                     const inc = target / speed;
-                    
+
                     if (count < target) {
                         counter.innerText = Math.ceil(count + inc);
                         setTimeout(updateCount, 15);
